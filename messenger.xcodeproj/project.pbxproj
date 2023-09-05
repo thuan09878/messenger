@@ -83,12 +83,12 @@
 		24E0BE692A9C4F4E0041DCD7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				24E0BE592A9C4D9B0041DCD7 /* ConversationsViewController.swift */,
 				24E0BE7B2A9CA1850041DCD7 /* Auth */,
 				24E0BE732A9C50E50041DCD7 /* PhotoViewerViewController.swift */,
 				24E0BE752A9C50F00041DCD7 /* VideoViewerViewController.swift */,
 				24E0BE772A9C51160041DCD7 /* NewConversationViewController.swift */,
 				24E0BE792A9C512A0041DCD7 /* ProfileViewController.swift */,
+				24E0BE592A9C4D9B0041DCD7 /* ConversationsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -378,6 +378,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -408,6 +409,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
