@@ -20,7 +20,7 @@ final class DatabaseManager {
 
 extension DatabaseManager {
     
-    public func validateNewUser(with email: String, completion: @escaping ((Bool) -> Void)) {
+    public func emailExists(with email: String, completion: @escaping ((Bool) -> Void)) {
         var safeEmail: String {
             var safeEmail = email.replacingOccurrences(of: ".", with: "-")
             safeEmail = safeEmail.replacingOccurrences(of: "@", with: "-")
@@ -28,7 +28,7 @@ extension DatabaseManager {
         }
 
         database.child(safeEmail).observeSingleEvent(of: .value, with: { snapshot in
-            guard let value = snapshot.value as? String else {
+            guard snapshot.value is String else {
                 completion(false)
                 return
             }
@@ -56,5 +56,4 @@ struct ChatAppUser {
         safeEmail = safeEmail.replacingOccurrences(of: "@", with: "-")
         return safeEmail
     }
-//    let firstName: String
 }

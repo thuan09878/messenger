@@ -164,7 +164,7 @@ class RegisterViewController: UIViewController {
             return
         }
         
-        DatabaseManager.shared.validateNewUser(with: email, completion:  {[weak self] exists in
+        DatabaseManager.shared.emailExists(with: email, completion:  {[weak self] exists in
             guard let strongSelf = self else {
                 return
             }
